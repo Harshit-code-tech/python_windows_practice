@@ -1,0 +1,19 @@
+{
+    "break_interval": {
+        "value": 1,
+        "unit": "minutes"
+    },
+    "break_duration": {
+        "value": 10,
+        "unit": "seconds"
+    },
+    "auto_start": {
+        "value": false
+    },
+    "theme": {
+        "value": "dark"
+    },
+    "pause_threshold": {
+        "value": 5
+    }
+}
