@@ -1,0 +1,137 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: thank_you
+  examples: |
+    - Thanks
+    - Thank you
+    - That's helpful
+    - Thanks for the help
+- intent: ask_about
+  examples: |
+    - Who are you?
+    - What are you?
+    - Who you are?
+    - Why are you?
+
+- intent: local_flora
+  examples: |
+    - What kind of flowers grow here?
+    - Tell me about native trees
+    - Are there any unique plants in this area?
+    - I'm interested in the local flora
+
+- intent: local_fauna
+  examples: |
+    - What animals live here?
+    - Tell me about native birds
+    - Are there any interesting animals in this area?
+    - I'm curious about the local fauna
+
+- intent: historical_sites
+  examples: |
+    - What historical landmarks are nearby?
+    - Tell me about the history of this place
+    - Are there any historical sites in the area?
+    - I'm interested in learning about the local history
+
+- intent: conservation_efforts
+  examples: |
+    - How can I help conserve the environment?
+    - What are some local conservation projects?
+    - Are there ways I can get involved in conservation?
+    - I'd like to know about conservation efforts
+
+- intent: bio_location
+  examples: |
+    - What is the bio condition of [New York](location)?
+    - Tell me about the bioheritage of [Amazon Rainforest](location)
+    - Give me 3 points about the bio condition in [Australia](location)

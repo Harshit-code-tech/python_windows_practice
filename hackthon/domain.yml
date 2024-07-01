@@ -1,0 +1,82 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thank_you
+  - ask_about
+  - local_flora
+  - local_fauna
+  - historical_sites
+  - conservation_efforts
+  - bio_location
+
+entities:
+  - location
+
+slots:
+  location:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: location
+
+responses:
+  utter_greet:
+    - text: "Hi there!"
+    - text: "Hello! How can I help you today?"
+    - text: "Hey! Welcome to the bioheritage information chatbot."
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "See you later!"
+    - text: "Have a nice day!"
+    - text: "Bye! Come back again soon."
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_thank_you:
+    - text: "Happy to help!"
+    - text: "Any time!"
+    - text: "My pleasure"
+    - text: "You're most welcome!"
+
+  utter_ask_about:
+    - text: "My name is Buddy, your bioheritage assistant bot."
+    - text: "My name is Buddy, an Artificial Intelligent bot."
+    - text: "My name is Buddy, and I am here to assist you with bioheritage information."
+
+  utter_local_flora:
+    - text: "This area is known for its beautiful wildflowers! Some common species include Wildflowers. You can also find a variety of native trees such as (examples, e.g., oaks, maples). For a complete list of local flora, visit [link to local flora website](https://rb.gy/rqn3om)."
+
+  utter_local_fauna:
+    - text: "This region is home to a diverse range of fauna. Some common animals include deer, rabbits, birds. For a complete list of local fauna, visit [link to local fauna website](https://www.inaturalist.org/places/india)."
+
+  utter_historical_sites:
+    - text: "There are several historical landmarks in the area. A notable one is the Rajwada Palace, a 7-storey majestic palace built in the 1700s by the Holkar dynasty. It's a blend of Maratha and European architectural styles and served as the royal seat of the Holkar rulers. Today, it's a museum showcasing artifacts, weapons, and paintings that offer a glimpse into the region's rich history. To learn more about the history of this place, visit [Indiana Historical Society](https://indianahistory.org/) or [Rashtrapati Bhavan Museum](https://museum.rashtrapatibhavan.gov.in/)."
+
+  utter_conservation_efforts:
+    - text: "Conservation efforts are crucial for protecting our bioheritage. Here are some local projects you can support: Habitat Restoration, Endangered Species Protection. You can also get involved by volunteering or donating. Visit [Nature Conservancy](https://www.nature.org/en-us/) for more information."
+
+session_config:
+  session_expiration_time: 30
+  carry_over_slots_to_new_session: true
+
+actions:
+  - action_upload_image
+  - action_bio_location

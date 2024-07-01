@@ -1,0 +1,76 @@
+#stories.yml file contains the stories that the bot can follow.
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: greet path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: thank_you path
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- story: ask_about path
+  steps:
+  - intent: ask_about
+  - action: utter_ask_about
+
+- story: local_flora path
+  steps:
+  - intent: local_flora
+  - action: utter_local_flora
+
+- story: local_fauna path
+  steps:
+  - intent: local_fauna
+  - action: utter_local_fauna
+
+- story: historical_sites path
+  steps:
+  - intent: historical_sites
+  - action: utter_historical_sites
+
+- story: conservation_efforts path
+  steps:
+  - intent: conservation_efforts
+  - action: utter_conservation_efforts
+
+
+- story: bio location path
+  steps:
+  - intent: bio_location
+  - action: action_bio_location

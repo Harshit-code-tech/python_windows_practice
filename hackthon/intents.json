@@ -1,0 +1,73 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey"],
+      "responses": ["Hi there!", "Hello! How can I help you today?", "Hey! Welcome to the bioheritage information chatbot."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": ["See you later!", "Have a nice day!", "Bye! Come back again soon."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {
+      "tag": "about",
+      "patterns": ["Who are you?", "What are you?", "Who you are?", "Why are you"],
+      "responses": ["My name is Buddy, your bioheritage assistant bot.", "My name is Buddy, an Artificial Intelligent bot", "My name is Buddy, and I am here to assist you with bioheritage information."]
+    },
+    {
+      "tag": "local_flora",
+      "patterns": [
+        "What kind of flowers grow here?",
+        "Tell me about native trees",
+        "Are there any unique plants in this area?",
+        "I'm interested in the local flora"
+      ],
+      "responses": [
+        "This area is known for its beautiful wildflowers! Some common species include (provide examples based on your bioheritage data, e.g., bluebells, buttercups). You can also find a variety of native trees such as (examples, e.g., oaks, maples). For a complete list of local flora, visit [link to local flora website]."
+      ]
+    },
+    {
+      "tag": "local_fauna",
+      "patterns": [
+        "What animals live here?",
+        "Tell me about native birds",
+        "Are there any interesting animals in this area?",
+        "I'm curious about the local fauna"
+      ],
+      "responses": [
+        "This region is home to a diverse range of fauna. Some common animals include (provide examples based on your bioheritage data, e.g., deer, rabbits, birds).  For a complete list of local fauna, visit [link to local fauna website]."
+      ]
+    },
+    {
+      "tag": "historical_sites",
+      "patterns": [
+        "What historical landmarks are nearby?",
+        "Tell me about the history of this place",
+        "Are there any historical sites in the area?",
+        "I'm interested in learning about the local history"
+      ],
+      "responses": [
+        "There are several historical landmarks in the area. A notable one is (provide a specific example with a brief description). To learn more about the history of this place, visit [link to historical society website] or [link to relevant museum website]."
+      ]
+    },
+    {
+      "tag": "conservation_efforts",
+      "patterns": [
+        "How can I help conserve the environment?",
+        "What are some local conservation projects?",
+        "Are there ways I can get involved in conservation?",
+        "I'd like to know about conservation efforts"
+      ],
+      "responses": [
+        "Conservation efforts are crucial for protecting our bioheritage. Here are some local projects you can support: (provide examples of ongoing conservation projects). You can also get involved by (mention ways users can contribute, e.g., volunteering, donations). Visit [link to conservation organization website] for more information."
+      ]
+    }
+  ]
+}
+
